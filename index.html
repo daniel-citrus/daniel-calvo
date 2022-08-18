@@ -7,6 +7,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="/assets/style.css" type="text/css">
+
         <!-- Favicons -->
         <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
@@ -20,33 +23,58 @@
     </head>
 
     <body>
-        <div class="top-container">
-            <nav class="mobile-nav-bar">
-                <ul class="mobile-nav-controls" aria-role="navigation">
-                    <li>
-                        <a tabindex="1" href="#home">Home</a>
-                    </li>
-                    <li>
-                        <a tabindex="2" href="#projects">Projects</a>
-                    </li>
-                    <li>
-                        <a tabindex="3" href="#resources">Resources</a>
-                    </li>
-                    <li>
-                        <a tabindex="4" href="#inquiries">Inquiries</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+        <nav class="nav-bar">
+            <ul class="nav-controls" aria-role="navigation">
+                <li>
+                    <a tabindex="1" href="#home">Home</a>
+                </li>
+                <li>
+                    <a tabindex="2" href="#projects">Projects</a>
+                </li>
+                <li>
+                    <a tabindex="3" href="#resources">Resources</a>
+                </li>
+                <li>
+                    <a tabindex="4" href="#inquiries">Inquiries</a>
+                </li>
+            </ul>
+        </nav>
+        <div id="nav-toggle" class="active" aria-roledescription="Top navigation toggle button"><span>Toggle menu</span></div>
+        <nav class="mobile-nav-bar active">
+            <ul class="mobile-nav-controls" aria-role="navigation">
+                <li>
+                    <a tabindex="1" href="#home">Home</a>
+                </li>
+                <li>
+                    <a tabindex="2" href="#projects">Projects</a>
+                </li>
+                <li>
+                    <a tabindex="3" href="#resources">Resources</a>
+                </li>
+                <li>
+                    <a tabindex="4" href="#inquiries">Inquiries</a>
+                </li>
+            </ul>
+        </nav>
 
         <div class="main-body">
             <h1>Daniel Calvo</h1>
             <section>
                 <h2>About</h2>
                 <p>
-                    Hi, I'm Daniel, a curious and broad-minded programmer born in Saudi Arabia. After earning a Bachelor's Degree in Computer Science, I began pursuing my passion in Web Development. The ability to sculpt a website from the bottom up has been an art form that I have come to appreciate. In order to deliver high quality code and content
-                    
-                    Quality over quantity has always been my formula for success. 
+                    Hi, I'm Daniel, a curious and broad-minded programmer born in Saudi Arabia. After earning a
+                    Bachelor's Degree in Computer Science, I began pursuing my passion for Web Development. The ability
+                    to sculpt a website from the bottom up has been an art form that I have come to appreciate. To
+                    deliver high-quality code and content, I always make a conscious effort to put my audiences first.
+                </p>
+                <p>
+                    I love learning and am genuinely grateful for the internet and its limitless abundance of resources.
+                    On my site, you'll find a little more information about me and the goldmine of resources that I use
+                    personally.
+                </p>
+                <p>
+                    Have an idea for a static website? Do you need help updating your site? Or, do you just want to chat
+                    about Web Development, FIRE, or Real Estate? Shoot me an email!
                 </p>
             </section>
 
@@ -78,6 +106,25 @@
                     </p>
                 </div>
             </section>
+
+            <div class="projects">
+                <a href="">
+                    <div class="title">Sign-up Form</div>
+                    <div class="project form"></div>
+                </a>
+                <a href="">
+                    <div class="title">Calculator</div>
+                    <div class="project calc"></div>
+                </a>
+                <a href="">
+                    <div class="title">Etch-a-Sketch</div>
+                    <div class="project eas"></div>
+                </a>
+                <a href="">
+                    <div class="title">Rock, Paper, Scissors</div>
+                    <div class="project rps"></div>
+                </a>
+            </div>
         </div>
 
         <footer>

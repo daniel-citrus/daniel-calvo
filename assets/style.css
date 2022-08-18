@@ -1,1 +1,183 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* End of CSS Reset */
+
+:root {
+    --primary-background: #100F0F;
+    --secondary-background: #0F3D3E;
+    --primary-color: #F1F1F1;
+    --secondary-color: #E2DCC8;
+}
+
+body {
+    background-color: var(--primary-background);
+    color: var(--primary-color);
+}
+
+#nav-toggle {
+    display: block;
+    position: fixed;
+    top: 4px;
+    right: 10px;
+    padding: 10px 0;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+    width: 28px;
+    height: 4px;
+    display: block;
+    background: var(--secondary-color);
+    position: relative;
+    text-indent: -9000px;
+}
+
+#nav-toggle span {
+    margin: 10px 0;
+}
+
+#nav-toggle span:before,
+#nav-toggle span:after {
+    content: "";
+    position: absolute;
+}
+
+#nav-toggle span:before {
+    top: -8px;
+}
+
+#nav-toggle span:after {
+    bottom: -8px;
+}
+
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+
+#nav-toggle.active span {
+    background-color: transparent;
+}
+
+#nav-toggle.active span:before,
+#nav-toggle.active span:after {
+    top: 0;
+}
+
+#nav-toggle.active span:before {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+#nav-toggle.active span:after {
+    transform: translateY(-10px) rotate(-45deg);
+    -webkit-transform: translateY(-10px) rotate(-45deg);
+    top: 10px;
+}
+
+.mobile-nav-bar {
+    display: none;
+
+    position: fixed;
+    width: 45vw;
+    height: 100vh;
+    right: 0;
+    bottom: 50;
+
+    background-color: var(--secondary-background);
+    opacity: .984;
+    z-index: 100;
+}
+
+.mobile-nav-bar.active {
+    display: block;
+}
+
+.mobile-nav-controls {
+    display: flex;
+    height: 100%;
+    flex-flow: column nowrap;
+    gap: 5px;
+}
+
+.mobile-nav-controls li {
+    display: flex;
+    justify-content: flex-start;
+    height: 65px;
+
+    font-size: 1.5rem;
+    background-color: var(--secondary-background);
+    opacity: 1;
+}
+
+.mobile-nav-controls a {
+    background-color: red;
+    width: 100%;
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.nav-bar {
+    display: none;
+}
