@@ -67,8 +67,47 @@ body {
     background-color: var(--secondary-background);
     color: var(--primary-color);
 
-    max-width: 70vw;
+    max-width: 90vw;
     margin: 0 auto;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0 0 20px 0;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 0 0 15px 0;
+}
+
+h3 {
+    font-size: 1.17em;
+    margin: 0 0 10px 0;
+}
+
+h4 {
+    font-size: 1.00em;
+}
+
+h5 {
+    font-size: 0.83em;
+}
+
+h6 {
+    font-size: 0.67em;
+}
+
+p {
+    margin: 0 0 20px 0;
+}
+
+section {
+    margin: 0 0 200px 0;
 }
 
 #nav-toggle {
@@ -140,14 +179,18 @@ body {
     top: 10px;
 }
 
+.main-content {
+    margin: 50px auto 0 auto;
+}
+
 .mobile-nav-bar {
     display: none;
 
     position: fixed;
-    width: 40vw;
+    width: 50vw;
     height: 100vh;
+    top: 0;
     right: 0;
-    bottom: 50;
     padding: 52px 0 0 0;
 
     background-color: var(--primary-background);
@@ -163,7 +206,7 @@ body {
     display: flex;
     height: 100%;
     flex-flow: column nowrap;
-    gap: 5px;
+    gap: 2px;
 }
 
 .mobile-nav-controls li {
@@ -190,12 +233,45 @@ body {
     display: none;
 }
 
-/* 
-    Breakpoints
-    
-    320px — 480px: Mobile devices
-    481px — 768px: iPads, Tablets
-    769px — 1024px: Small screens, laptops
-    1025px — 1200px: Desktops, large screens
-    1201px and more —  Extra large screens, TV
- */
+.profile-photo {
+    height: 200px;
+    width: auto;
+    border-radius: 100px;
+}
+
+.profile-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin: 10px 0 40px 0;
+}
+
+@media screen and (min-width: 480px) {
+    .profile-photo {
+        height: 220px;
+        width: auto;
+        border-radius: 110px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .profile-photo {
+        height: 250px;
+        width: auto;
+        border-radius: 125px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .profile-photo {
+        height: 300px;
+        width: auto;
+        border-radius: 150px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        max-width: 1050px;
+    }
+}

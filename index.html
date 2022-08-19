@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="en" id="home">
 
     <head>
         <meta charset="UTF-8">
@@ -24,7 +24,6 @@
 
         <title>Daniel Calvo</title>
     </head>
-
     <body>
         <nav class="nav-bar">
             <ul class="nav-controls" aria-role="navigation">
@@ -32,38 +31,53 @@
                     <a tabindex="1" href="#home">Home</a>
                 </li>
                 <li>
-                    <a tabindex="2" href="#projects">Projects</a>
+                    <a tabindex="" href="#about">About</a>
                 </li>
                 <li>
-                    <a tabindex="3" href="#resources">Resources</a>
+                    <a tabindex="" href="#interests">Interests</a>
                 </li>
                 <li>
-                    <a tabindex="4" href="#inquiries">Inquiries</a>
+                    <a tabindex="" href="#projects">Projects</a>
+                </li>
+                <li>
+                    <a tabindex="" href="#resources">Resources</a>
+                </li>
+                <li>
+                    <a tabindex="" href="#inquiries">Inquiries</a>
                 </li>
             </ul>
         </nav>
-        <div id="nav-toggle" class="active" aria-roledescription="Top navigation toggle button"><span>Toggle menu</span></div>
-        <nav class="mobile-nav-bar active">
+        <div id="nav-toggle" aria-roledescription="Top navigation toggle button"><span>Toggle menu</span></div>
+        <nav class="mobile-nav-bar">
             <ul class="mobile-nav-controls">
                 <li>
                     <a tabindex="1" href="#home">Home</a>
                 </li>
                 <li>
-                    <a tabindex="2" href="#projects">Projects</a>
+                    <a tabindex="" href="#about">About</a>
                 </li>
                 <li>
-                    <a tabindex="3" href="#resources">Resources</a>
+                    <a tabindex="" href="#interests">Interests</a>
                 </li>
                 <li>
-                    <a tabindex="4" href="#inquiries">Inquiries</a>
+                    <a tabindex="" href="#projects">Projects</a>
+                </li>
+                <li>
+                    <a tabindex="" href="#resources">Resources</a>
+                </li>
+                <li>
+                    <a tabindex="" href="#inquiries">Inquiries</a>
                 </li>
             </ul>
         </nav>
+        <div class="main-content">
+            <div class="profile-wrapper">
+                <img class="profile-photo" src="/assets/media/images/profile-square.jpg" alt="Daniel">
+            </div>
 
-        <div class="main-body">
             <h1>Daniel Calvo</h1>
-            <section>
-                <h2>About</h2>
+            <section class="bio">
+                <h2 id="about">About</h2>
                 <p>
                     Hi, I'm Daniel, a curious and broad-minded programmer born in Saudi Arabia. After earning a
                     Bachelor's Degree in Computer Science, I began pursuing my passion for Web Development. The ability
@@ -75,14 +89,10 @@
                     On my site, you'll find a little more information about me and the goldmine of resources that I use
                     personally.
                 </p>
-                <p>
-                    Have an idea for a static website? Do you need help updating your site? Or, do you just want to chat
-                    about Web Development, FIRE, or Real Estate? Shoot me an email!
-                </p>
             </section>
 
             <section class="interests">
-                <h2>Interests</h2>
+                <h2 id="interests">Interests</h2>
 
                 <div class="finance">
                     <h3>Finance</h3>
@@ -110,24 +120,37 @@
                 </div>
             </section>
 
-            <div class="projects">
-                <a href="">
-                    <div class="title">Sign-up Form</div>
-                    <div class="project form"></div>
-                </a>
-                <a href="">
-                    <div class="title">Calculator</div>
-                    <div class="project calc"></div>
-                </a>
-                <a href="">
-                    <div class="title">Etch-a-Sketch</div>
-                    <div class="project eas"></div>
-                </a>
-                <a href="">
-                    <div class="title">Rock, Paper, Scissors</div>
-                    <div class="project rps"></div>
-                </a>
-            </div>
+            <section class="projects">
+                <h2 id="projects">Projects</h2>
+                    <a href="">
+                        <div class="title">Sign-up Form</div>
+                        <div class="project form"></div>
+                    </a>
+                    <a href="">
+                        <div class="title">Calculator</div>
+                        <div class="project calc"></div>
+                    </a>
+                    <a href="">
+                        <div class="title">Etch-a-Sketch</div>
+                        <div class="project eas"></div>
+                    </a>
+                    <a href="">
+                        <div class="title">Rock, Paper, Scissors</div>
+                        <div class="project rps"></div>
+                    </a>
+            </section>
+
+            <section class="resources">
+                <h2 id="resources">Resources</h2>
+            </section>
+
+            <section class="inquiry">
+                <h2 id="inquiries">Contact Me</h2>
+                <p>
+                    Have an idea for a static website? Do you need help updating your site? Or, do you just want to chat
+                    about Web Development, FIRE, or Real Estate? Shoot me an email!
+                </p>
+            </section>
         </div>
 
         <footer>
