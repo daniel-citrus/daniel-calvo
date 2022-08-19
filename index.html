@@ -24,6 +24,7 @@
 
         <title>Daniel Calvo</title>
     </head>
+
     <body>
         <nav class="nav-bar">
             <ul class="nav-controls" aria-role="navigation">
@@ -31,19 +32,19 @@
                     <a tabindex="1" href="#home">Home</a>
                 </li>
                 <li>
-                    <a tabindex="" href="#about">About</a>
+                    <a tabindex="2" href="#about">About</a>
                 </li>
                 <li>
-                    <a tabindex="" href="#interests">Interests</a>
+                    <a tabindex="3" href="#interests">Interests</a>
                 </li>
                 <li>
-                    <a tabindex="" href="#projects">Projects</a>
+                    <a tabindex="4" href="#projects">Projects</a>
                 </li>
                 <li>
-                    <a tabindex="" href="#resources">Resources</a>
+                    <a tabindex="5" href="#resources">Resources</a>
                 </li>
                 <li>
-                    <a tabindex="" href="#inquiries">Inquiries</a>
+                    <a tabindex="6" href="#inquiries">Inquiries</a>
                 </li>
             </ul>
         </nav>
@@ -54,19 +55,19 @@
                     <a tabindex="1" href="#home">Home</a>
                 </li>
                 <li>
-                    <a tabindex="" href="#about">About</a>
+                    <a tabindex="2" href="#about">About</a>
                 </li>
                 <li>
-                    <a tabindex="" href="#interests">Interests</a>
+                    <a tabindex="3" href="#interests">Interests</a>
                 </li>
                 <li>
-                    <a tabindex="" href="#projects">Projects</a>
+                    <a tabindex="4" href="#projects">Projects</a>
                 </li>
                 <li>
-                    <a tabindex="" href="#resources">Resources</a>
+                    <a tabindex="5" href="#resources">Resources</a>
                 </li>
                 <li>
-                    <a tabindex="" href="#inquiries">Inquiries</a>
+                    <a tabindex="6" href="#inquiries">Inquiries</a>
                 </li>
             </ul>
         </nav>
@@ -79,10 +80,11 @@
             <section class="bio">
                 <h2 id="about">About</h2>
                 <p>
-                    Hi, I'm Daniel, a curious and broad-minded programmer born in Saudi Arabia. After earning a
-                    Bachelor's Degree in Computer Science, I began pursuing my passion for Web Development. The ability
-                    to sculpt a website from the bottom up has been an art form that I have come to appreciate. To
-                    deliver high-quality code and content, I always make a conscious effort to put my audiences first.
+                    Hi, I'm Daniel, a curious programmer born in Saudi Arabia and raised in the Philippines. After
+                    earning a
+                    Bachelor's Degree in Computer Science, I began pursuing my passion for Web Development. Sculpting a
+                    website from scratch has been an art form that I have come to appreciate. To
+                    deliver high-quality code and content, I make a conscious effort to put my audiences first.
                 </p>
                 <p>
                     I love learning and am genuinely grateful for the internet and its limitless abundance of resources.
@@ -122,43 +124,52 @@
 
             <section class="projects">
                 <h2 id="projects">Projects</h2>
-                    <a href="">
-                        <div class="title">Sign-up Form</div>
-                        <div class="project form"></div>
-                    </a>
-                    <a href="">
-                        <div class="title">Calculator</div>
-                        <div class="project calc"></div>
-                    </a>
-                    <a href="">
-                        <div class="title">Etch-a-Sketch</div>
-                        <div class="project eas"></div>
-                    </a>
-                    <a href="">
-                        <div class="title">Rock, Paper, Scissors</div>
-                        <div class="project rps"></div>
-                    </a>
+                <a href="">
+                    <div class="title">Sign-up Form</div>
+                    <div class="project form"></div>
+                </a>
+                <a href="">
+                    <div class="title">Calculator</div>
+                    <div class="project calc"></div>
+                </a>
+                <a href="">
+                    <div class="title">Etch-a-Sketch</div>
+                    <div class="project eas"></div>
+                </a>
+                <a href="">
+                    <div class="title">Rock, Paper, Scissors</div>
+                    <div class="project rps"></div>
+                </a>
             </section>
 
             <section class="resources">
                 <h2 id="resources">Resources</h2>
+                <ul>
+                    <li><a href="https://www.theodinproject.com/">The Odin Project</a></li>
+                    <li><a href="https://www.edx.org/">edX</a></li>
+                    <li><a href="https://www.biggerpockets.com/">BiggerPockets</a></li>
+                    <li><a href="https://www.nerdwallet.com/">nerdwallet</a></li>
+                    <li><a href="https://www.investopedia.com/">Investopedia</a></li>
+                    <li><a href="https://www.madfientist.com/optimize-your-journey-to-fi/">Mad Fientist</a></li>
+                </ul>
             </section>
 
             <section class="inquiry">
                 <h2 id="inquiries">Contact Me</h2>
-                <p>
-                    Have an idea for a static website? Do you need help updating your site? Or, do you just want to chat
-                    about Web Development, FIRE, or Real Estate? Shoot me an email!
-                </p>
+                <form action="https://formsubmit.co/dcalvo@leomail.tamuc.edu" method="POST">
+                    <div class="description">Have an idea for a static website? Do you need help updating your site? Or,
+                        do you just want to chat
+                        about Web Development, FIRE, or Real Estate? Shoot me an email!</div>
+                    <input type="email" name="email" required placeholder="Your email">
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <button type="submit">Send</button>
+                </form>
             </section>
         </div>
 
         <footer>
             <div>
                 Powered by <a href="https://github.com/">Github</a>
-            </div>
-            <div>
-                Media from <a href="https://www.flaticon.com/" title="Flaticon">Flaticon</a>
             </div>
         </footer>
 

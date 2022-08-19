@@ -83,6 +83,7 @@ h1 {
 h2 {
     font-size: 1.5em;
     margin: 0 0 15px 0;
+    padding: 10px 0 0 0;
 }
 
 h3 {
@@ -113,8 +114,8 @@ section {
 #nav-toggle {
     display: block;
     position: fixed;
-    top: 4px;
-    right: 10px;
+    top: 13px;
+    right: 13px;
     padding: 10px 0;
     cursor: pointer;
     z-index: 1000;
@@ -191,7 +192,7 @@ section {
     height: 100vh;
     top: 0;
     right: 0;
-    padding: 52px 0 0 0;
+    padding: 64px 0 0 0;
 
     background-color: var(--primary-background);
     opacity: .984;
@@ -231,6 +232,31 @@ section {
 
 .nav-bar {
     display: none;
+    position: sticky;
+    top: 0;
+    height: 40px;
+}
+
+.nav-controls {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    height: 100%;
+    gap: 2px;
+}
+
+.nav-controls li {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.nav-controls a {
+    background-color: red;
+    padding: 10px 20px;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 2px;
 }
 
 .profile-photo {
@@ -263,6 +289,24 @@ section {
 }
 
 @media screen and (min-width: 1024px) {
+    #nav-toggle {
+        display: none;
+    }
+
+    .mobile-nav-bar,
+    .mobile-nav-bar.active,
+    .mobile-nav-controls {
+        display: none;
+    }
+
+    .nav-bar {
+        display: block;
+    }
+
+    .nav-controls {
+        display: flex;
+    }
+
     .profile-photo {
         height: 300px;
         width: auto;
@@ -275,3 +319,11 @@ section {
         max-width: 1050px;
     }
 }
+
+/*
+    320px — 480px: Mobile devices `
+    481px — 768px: iPads, Tablets 
+    769px — 1024px: Small screens, laptops 
+    1025px — 1200px: Desktops, large screens 
+    1201px and more —  Extra large screens, TV 
+*/
