@@ -10,7 +10,7 @@
         <!-- Stylesheets -->
         <link rel="stylesheet" href="/assets/style.css" type="text/css">
 
-        <!-- Scripts -->    
+        <!-- Scripts -->
         <script src="/assets/scripts/mobile-nav-switch.js" defer></script>
 
         <!-- Favicons -->
@@ -26,28 +26,6 @@
     </head>
 
     <body>
-        <nav class="nav-bar">
-            <ul class="nav-controls" aria-role="navigation">
-                <li>
-                    <a tabindex="1" href="#home">Home</a>
-                </li>
-                <li>
-                    <a tabindex="2" href="#about">About</a>
-                </li>
-                <li>
-                    <a tabindex="3" href="#interests">Interests</a>
-                </li>
-                <li>
-                    <a tabindex="4" href="#projects">Projects</a>
-                </li>
-                <li>
-                    <a tabindex="5" href="#resources">Resources</a>
-                </li>
-                <li>
-                    <a tabindex="6" href="#inquiries">Inquiries</a>
-                </li>
-            </ul>
-        </nav>
         <div id="nav-toggle" aria-roledescription="Top navigation toggle button"><span>Toggle menu</span></div>
         <nav class="mobile-nav-bar">
             <ul class="mobile-nav-controls">
@@ -67,7 +45,7 @@
                     <a href="#resources">Resources</a>
                 </li>
                 <li>
-                    <a href="#inquiries">Inquiries</a>
+                    <a href="#contact">Contact</a>
                 </li>
             </ul>
         </nav>
@@ -75,6 +53,29 @@
             <div class="profile-wrapper">
                 <img class="profile-photo" src="/assets/media/images/profile-square.jpg" alt="Daniel">
             </div>
+
+            <nav class="nav-bar">
+                <ul class="nav-controls" aria-role="navigation">
+                    <li>
+                        <a tabindex="1" href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a tabindex="2" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a tabindex="3" href="#interests">Interests</a>
+                    </li>
+                    <li>
+                        <a tabindex="4" href="#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a tabindex="5" href="#resources">Resources</a>
+                    </li>
+                    <li>
+                        <a tabindex="6" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
 
             <h1>Daniel Calvo</h1>
             <section class="bio">
@@ -88,7 +89,8 @@
                 </p>
                 <p>
                     I love learning and am genuinely grateful for the internet and its limitless abundance of resources.
-                    On my site, you'll find a little more information about me and the goldmine of useful resources that I'd like to share.
+                    On my site, you'll find a little more information about me and the goldmine of useful resources that
+                    I'd like to share.
                 </p>
             </section>
 
@@ -144,24 +146,61 @@
             <section class="resources">
                 <h2 id="resources">Resources</h2>
                 <ul>
-                    <li><a href="https://www.theodinproject.com/">The Odin Project</a></li>
-                    <li><a href="https://www.edx.org/">edX</a></li>
-                    <li><a href="https://www.biggerpockets.com/">BiggerPockets</a></li>
-                    <li><a href="https://www.nerdwallet.com/">nerdwallet</a></li>
-                    <li><a href="https://www.investopedia.com/">Investopedia</a></li>
-                    <li><a href="https://www.madfientist.com/optimize-your-journey-to-fi/">Mad Fientist</a></li>
+                    <li>
+                        <a href="https://www.theodinproject.com/" target="_blank">The Odin Project</a>
+                        <div class="hyphen">-</div>
+                        <div class="link-description">
+                            a free full stack curriculum that is supported by a passionate open source community
+                        </div>
+                    </li>
+                    <li>
+                        <a href="https://www.edx.org/" target="_blank">edX</a>
+                        <div class="hyphen">-</div>
+                        <div class="link-description">
+                            education courses from top universities
+                        </div>
+                    </li>
+                    <li>
+                        <a href="https://www.biggerpockets.com/" target="_blank">BiggerPockets</a>
+                        <div class="hyphen">-</div>
+                        <div class="link-description">
+                            learn about investment strategies, analyze properties, connect with investor-friendly
+                            agents, and more
+                        </div>
+                    </li>
+                    <li>
+                        <a href="https://www.nerdwallet.com/" target="_blank">nerdwallet</a>
+                        <div class="hyphen">-</div>
+                        <div class="link-description">
+                            tips and insights to help you make smart money decisions
+                        </div>
+                    </li>
+                    <li>
+                        <a href="https://www.investopedia.com/" target="_blank">Investopedia</a>
+                        <div class="hyphen">-</div>
+                        <div class="link-description">
+                            market news, retirement strategies, investing education, and insights from advisors
+                        </div>
+                    </li>
+                    <li>
+                        <a href="https://www.madfientist.com/optimize-your-journey-to-fi/" target="_blank">Mad
+                            Fientist</a>
+                        <div class="hyphen">-</div>
+                        <div class="link-description">
+                            advanced strategies for pursuing financial independence and early retirement</div>
+                    </li>
                 </ul>
             </section>
 
             <section class="inquiry">
-                <h2 id="inquiries">Contact Me</h2>
+                <h2 id="contact">Contact Me</h2>
                 <form action="https://formsubmit.co/dcalvo@leomail.tamuc.edu" method="POST">
-                    <p>Have an idea for a static website? Do you need help updating your site? Or,
+                    <p>Have a cool idea for a static website? Do you need help updating your site? Or,
                         do you just want to chat
                         about Web Development, FIRE, or Real Estate? Shoot me an email!</p>
                     <fieldset>
                         <input type="email" name="email" required placeholder="Your email">
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Message" required></textarea>
+                        <textarea name="msg" id="" cols="30" rows="10" placeholder="Message" required></textarea>
                     </fieldset>
                     <button type="submit">Send</button>
                 </form>
@@ -170,7 +209,7 @@
 
         <footer>
             <div>
-                Powered by <a href="https://github.com/">Github</a>
+                Hosted on <a href="https://github.com/">Github</a>
             </div>
         </footer>
 
