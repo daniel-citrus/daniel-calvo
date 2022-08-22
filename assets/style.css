@@ -56,11 +56,11 @@ table {
 /* End of CSS Reset */
 
 :root {
-    --primary-background: #C2DED1;
-    --secondary-background: #ECE5C7;
-    --tertiary-background: #0b4788;
-    --primary-color: #354259;
-    --secondary-color: #CDC2AE;
+    --primary-background: #393E46;
+    --secondary-background: #EEEEEE;
+    --tertiary-background: #006c8d;
+    --primary-color: #222831;
+    --secondary-color: #EEEEEE;
 }
 
 * {
@@ -360,7 +360,7 @@ section {
 .mobile-nav-controls a:hover,
 .mobile-nav-controls a:focus,
 .mobile-nav-controls a:active {
-    background-color: #0f425a;
+    background-color: var(--tertiary-background);
     color: white;
 }
 
@@ -386,8 +386,6 @@ section {
     display: block;
     min-width: 132px;
     text-align: right;
-
-    color: var(--tertiary-background);
 }
 
 .resources li {
