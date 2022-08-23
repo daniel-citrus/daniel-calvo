@@ -82,7 +82,7 @@ body {
     font-family: sans-serif;
     background-color: var(--secondary-background);
     color: var(--primary-color);
-    width: min(85vw,91ch);
+    width: min(85vw, 91ch);
     margin: 0 auto;
 
 }
@@ -106,7 +106,7 @@ form button {
     margin: 10px auto;
 
     background-color: var(--primary-color);
-    
+
     color: var(--secondary-color);
     border: 1px solid var(--primary-color);
 }
@@ -302,7 +302,7 @@ section {
 
 .mobile-nav-controls a {
     display: flex;
-    
+
     align-items: center;
     width: 100%;
     text-decoration: none;
@@ -446,8 +446,7 @@ section {
     }
 }
 
-@media screen and (min-width: 1200px) {
-}
+@media screen and (min-width: 1200px) {}
 
 /*
     320px — 480px: Mobile devices `
