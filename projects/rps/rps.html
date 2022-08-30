@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <script defer src="/projects/rps/script.js"></script>
+        <link rel="stylesheet" type="text/css" href="/projects/rps/style.css">
+        <title>Rock, Paper, Scissors!</title>
+    </head>
+
+    <body>
+        <div class="return">
+            <a id="backToProjects" href="../../index.html#projects">
+                <button>Back to Projects</button>
+            </a>
+        </div>
+        <div class="title fadeIn">You vs. Machine</div>
+        <div class="welcome">
+            <div class="prompt fadeIn">Can you beat Machine in a game of Rock, Paper, Scissors? First to 5 wins.</div>
+            <button class="fadeIn">Start</button>
+        </div>
+        <div class="game hidden">
+            <div class="prompt fadeIn">Choose your weapon:</div>
+            <div class="controls fadeIn">
+                <button class="rock"></button>
+                <button class="paper"></button>
+                <button class="scissors"></button>
+            </div>
+            <div class="status"></div>
+            <div class="score-board">
+                <div class="player fadeIn">
+                    <div class="name">You</div>
+                    <div class="score">0</div>
+                </div>
+                <div class="ai fadeIn">
+                    <div class="name">AI</div>
+                    <div class="score">0</div>
+                </div>
+                <div class="tie fadeIn">
+                    <div class="name">Tie</div>
+                    <div class="score">0</div>
+                </div>
+            </div>
+        </div>
+        <div class="end hidden">
+            <div class="prompt fadeIn"></div>
+            <button class="again fadeIn">Play Again</button>
+        </div>
+    </body>
+
+</html>
