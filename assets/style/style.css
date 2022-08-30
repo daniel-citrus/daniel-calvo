@@ -61,6 +61,7 @@ table {
     --tertiary-background: #006c8d;
     --primary-color: #222831;
     --secondary-color: #EEEEEE;
+    --link-hover-dark-bg: #22b6e3;
 }
 
 * {
@@ -111,7 +112,7 @@ footer a {
 }
 
 footer a:hover {
-    color: var(--tertiary-background);
+    color: var(--link-hover-dark-bg);
 }
 
 form {
@@ -129,7 +130,7 @@ form button {
     background-color: var(--primary-color);
 
     color: var(--secondary-color);
-    border: 1px solid var(--primary-color);
+    border: 1px transparent;
 }
 
 form button {
@@ -206,7 +207,11 @@ p {
 }
 
 section {
-    min-height: calc(100vh - 2.4rem);
+    min-height: 75vh;
+}
+
+section>h2 {
+    scroll-margin-top: 3rem;
 }
 
 #nav-toggle {
@@ -402,31 +407,47 @@ section {
     margin: 10px 0 40px 0;
 }
 
-.project {
+.project > a{
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
     gap: 5px;
 
     width: 100px;
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.project > a:hover {
+    color: var(--link-hover-dark-bg);
 }
 
 .project .icon {
     height: 90px;
     width: 90px;
-    border: 1px solid red;
     border-radius: 2.6px;
 }
 
 .project .title {
     text-align: center;
+    font-size: 1rem;
+}
+
+.projects {
+    height: 600px;
 }
 
 .project-list {
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
-    gap: 20px;
+    gap: 30px;
+
+    padding: 20px;
+    background: var(--primary-background);
+    border-radius: 2px;
+
+    height: 40%;
 }
 
 .resources {
@@ -517,7 +538,7 @@ section {
     }
 
     section>h2 {
-        scroll-margin-top: 2.4rem;
+        scroll-margin-top: 5rem;
     }
 }
 
