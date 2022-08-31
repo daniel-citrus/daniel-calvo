@@ -441,6 +441,7 @@ section>h2 {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+    flex: 1 1 auto;
     gap: 5px;
 
     width: 100px;
@@ -464,7 +465,7 @@ section>h2 {
 }
 
 .projects {
-    height: 600px;
+    min-height: 600px;
 }
 
 .project-list {
@@ -472,12 +473,11 @@ section>h2 {
     flex-flow: row wrap;
     justify-content: flex-start;
     gap: 30px;
-
     padding: 20px;
     background: var(--primary-background);
     border-radius: 2px;
 
-    height: 40%;
+    min-height: 350px;
 }
 
 .resources {
