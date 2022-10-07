@@ -225,8 +225,8 @@ hr {
     font-size: 14px;
     font-weight: 700;
     color: var(--oxford-blue);
-    background-color: var(--mint-creme);
-    border: 1px solid var(--mint-creme);
+    background-color: white;
+    border: 1px solid white;
     border-radius: 2px;
     cursor: pointer;
 }
