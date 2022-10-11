@@ -334,12 +334,17 @@ hr {
     gap: 10px;
 }
 
+.module-group {
+    display: grid;
+    grid-template: auto 1fr / auto;
+}
+
 .module-groups {
     background: #34527528;
 
     display: grid;
     grid-template: repeat(3, auto) / 1fr;
-    gap: 10px;
+    gap: 15px;
 
     padding: 20px 10px 40px 10px;
 }
@@ -666,6 +671,12 @@ hr {
         display: flex;
         flex-flow: column nowrap;
         gap: 8px;
+    }
+
+    .desktop-navigation .footer .right {
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 5px;
     }
 
     .desktop-navigation .footer .right ul {
