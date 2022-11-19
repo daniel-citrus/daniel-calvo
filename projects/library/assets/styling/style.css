@@ -1,0 +1,466 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+:root {
+    --font-stack: Abel, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif;
+    --border-radius: 3px;
+}
+
+button {
+    font-family: inherit;
+    font-size: 1rem;
+
+    transition: all 0.1s ease-out;
+
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+button:hover,
+button:focus,
+button:focus-visible {
+    outline: 0;
+    box-shadow: 0 0 5px rgba(175, 175, 175, 0.493);
+    background-color: rgba(192, 192, 192, 0.603);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-stack);
+    position: relative;
+    height: 100%;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    gap: 5px;
+    
+    font-size: 1.2rem;
+    padding: 8px 0;
+    background: white;
+    box-shadow: 0 0 10px rgba(184, 184, 184, 0.329);
+}
+
+footer .backToProjects button {
+    border: 0px solid rgba(128, 128, 128, 0.801);
+    border-radius: var(--border-radius);
+    padding: 4px 14px;
+    font-size: 1.2rem;
+}
+
+header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 8px 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(184, 184, 184, 0.329);
+}
+
+header button.new-book,
+.library button.new-book {
+    justify-self: center;
+    order: 1;
+    height: 70px;
+    width: 70px;
+
+    border-radius: var(--border-radius);
+    border: 0;
+    font-size: 1.7rem;
+    background-image: url(/projects/library/assets/media/icons/plus.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30px;
+}
+
+header button.new-book {
+    height: 50px;
+    width: 50px;
+    background-size: 20px;
+}
+
+header .title {
+    font-size: 2.2rem;
+    user-select: none;
+}
+
+html {
+    height: 100%;
+}
+
+@font-face {
+    font-family: Abel;
+    src: url(/projects/library/assets/fonts/Abel/Abel-Regular.ttf);
+}
+
+.card {
+    position: relative;
+    box-shadow: 0px 0px 5px rgb(165, 165, 165);
+    border-radius: var(--border-radius);
+
+    display: grid;
+    min-height: 155px;
+
+    padding: 25px 12px 12px 12px;
+}
+
+.card .buttons {
+    margin-top: auto;
+
+    display: grid;
+}
+
+.card .buttons>* {
+    border-radius: var(--border-radius);
+}
+
+.card .buttons button {
+    height: 30px;
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+.card .cardDelete {
+    position: absolute;
+    right: 12px;
+}
+
+.card button.read {
+    margin-top: auto;
+    font-size: 1.3rem;
+}
+
+.card button.cardDelete {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    background: #e9e9ed;
+    border: 0;
+    height: 25px;
+    width: 35px;
+    margin: 0 auto;
+
+    background-image: url(/projects/library/assets/media/icons/close.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 15px;
+}
+
+.cardContents {
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+.cardContents .title {
+    font-weight: bold;
+}
+
+.completed-row {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    margin: 15px 0;
+}
+
+.form-buttons {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 5px;
+    font-family: inherit;
+}
+
+.form-buttons button:focus,
+.form-buttons button:focus-visible {
+    background: #c0c0c0;
+    border: 1px solid #c0c0c0;
+    outline: 0;
+}
+
+.form-buttons button:hover {
+    border: 1px solid #8f8f8f;
+    background: #8f8f8f;
+}
+
+.form-contents button,
+.form-contents input {
+    padding: 0 10px;
+    height: 40px;
+    border: 1px solid rgb(202, 202, 202);
+    border-radius: var(--border-radius);
+    transition: all 0.1s ease-out;
+}
+
+.form-contents input:focus,
+.form-contents input:focus-visible,
+.form-contents input[type='checkbox']:focus,
+.form-contents input[type='checkbox']:focus-visible {
+    border: 1px solid #8f8f8f;
+    outline: 0;
+}
+
+.form-contents input:hover,
+.form-contents input[type='checkbox']:hover {
+    border: 1px solid rgb(97, 97, 97);
+}
+
+.form-contents input[type='checkbox'] {
+    appearance: none;
+    height: 25px;
+    width: 25px;
+    background: #ffffff;
+    border-radius: var(--border-radius);
+    margin: 0;
+}
+
+.form-contents input[type='checkbox']:checked {
+    background-image: url(/projects/library/assets/media/icons/check.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 17px;
+}
+
+
+.form-contents {
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 4px;
+    margin: 8px;
+    padding: 0px 15px 25px 15px;
+    border-radius: var(--border-radius);
+    box-shadow: 0px 0px 12px rgba(165, 165, 165, 0.9);
+    background: #f7f7f7;
+
+    font-size: 1.1rem;
+}
+
+.form-contents .cancel {
+    align-self: flex-end;
+    height: 33px;
+    width: 55px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    background: #e9e9ed;
+    border: 0;
+    transition: all 0.1s ease-out;
+
+    background-image: url(/projects/library/assets/media/icons/close.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+}
+
+.form-row {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.library {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: minmax(min-content, max-content);
+    gap: 20px;
+    align-items: center;
+
+    padding: 25px 20px;
+
+    overflow: auto;
+}
+
+.library button[book-completed='false'] {
+    background: rgb(235, 141, 141);
+    border: 1px solid rgb(235, 141, 141);
+}
+
+.library button[book-completed='true'] {
+    background: rgb(131, 235, 131);
+    border: 1px solid rgb(131, 235, 131);
+}
+
+.main-window {
+    display: grid;
+    grid-template: auto 1fr auto / auto;
+    height: 100%;
+}
+
+.new-book-form {
+    display: none;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+
+    flex-flow: column nowrap;
+    justify-content: center;
+
+    background: rgba(228, 228, 228, 0.3);
+    backdrop-filter: blur(1.4px);
+    z-index: 100;
+}
+
+.new-book-form.active {
+    display: flex;
+}
+
+.card .cardDelete:hover,
+.card .cardDelete:focus,
+.card .cardDelete:focus-visible,
+.new-book-form .cancel:hover,
+.new-book-form .cancel:focus,
+.new-book-form .cancel:focus-visible {
+    background-color: rgba(255, 9, 9, 0.616);
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.349);
+    outline: 0;
+}
+
+.new-book-form .completed-row {
+    flex-flow: row nowrap;
+}
+
+@media screen and (min-width: 769px) {
+    footer {
+        font-size: 1.1rem;
+    }
+    
+    footer .backToProjects button {
+        padding: 3px 10px;
+        font-size: 1.1rem;
+    }
+
+    header {
+        padding: 10px 25px;
+    }
+
+    header button.new-book {
+        height: 40px;
+        width: 40px;
+    }
+
+    header .title {
+        font-size: 2.5rem;
+    }
+
+    .form-row.form-buttons {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .form-contents {
+        padding: 0px 35px 25px 35px;
+        max-width: 530px;
+        width: 55%;
+    }
+
+    .form-contents .cancel {
+        height: 30px;
+        margin-bottom: 10px;
+        background-size: 16px;
+    }
+
+    .form-row {
+        display: grid;
+        grid-template-columns: 86px auto;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .form-row label {
+        text-align: right;
+    }
+
+    .library {
+        padding: 25px 30px;
+    }
+
+    .new-book-form {
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    footer {
+        font-size: 1rem;
+    }
+    
+    footer .backToProjects button {
+        padding: 3px 10px;
+        font-size: 1rem;
+    }
+
+    header {
+        padding: 18px 32px;
+    }
+
+    header button.new-book {
+        height: 35px;
+        width: 35px;
+        background-size: 20px;
+    }
+
+    header .title {
+        font-size: 2.9rem;
+    }
+}

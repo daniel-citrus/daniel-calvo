@@ -311,7 +311,7 @@ section>h2 {
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    
+
     gap: 10px;
 }
 
@@ -440,7 +440,7 @@ section>h2 {
     margin: 10px 0 40px 0;
 }
 
-.project > a{
+.project>a {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -452,7 +452,7 @@ section>h2 {
     color: var(--secondary-color);
 }
 
-.project > a:hover {
+.project>a:hover {
     color: var(--link-hover-dark-bg);
 }
 
@@ -492,6 +492,7 @@ section>h2 {
     display: block;
     min-width: 132px;
     text-align: right;
+    text-decoration: none;
 }
 
 .resources li {
