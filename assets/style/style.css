@@ -64,6 +64,7 @@ table {
     --link-hover-dark-bg: #22b6e3;
 
     --min-width: min(85vw, 91ch);
+    --font-family: sans-serif;
 }
 
 * {
@@ -82,7 +83,7 @@ a:focus-visible {
 }
 
 body {
-    font-family: sans-serif;
+    font-family: var(--font-family);
     background-color: var(--secondary-background);
     color: var(--primary-color);
     margin: 0 auto;
@@ -195,10 +196,12 @@ textarea {
     border: 1px solid var(--primary-color);
     background-color: rgba(128, 128, 128, .1);
     border-radius: 2.6px;
+    font-family: var(--font-family);
+    font-size: 1rem;
 }
 
 textarea {
-    padding: 8px 0 0 7px;
+    padding: 8px 7px;
     height: 250px;
     resize: none;
 }
